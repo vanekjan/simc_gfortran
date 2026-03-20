@@ -24,7 +24,7 @@ ifeq ($(MYOS),Linux)
   F77 := gfortran
 endif
 
-ROOTSYS=/cvmfs/oasis.opensciencegrid.org/jlab/scicomp/sw/el9/root/6.30.04-gcc11.4.0
+ROOTSYS=/u/home/vanekjan/my_root/root_install
 CXX=g++
 CXXFLAGS0 = -O3 -std=c++17
 CXXFLAGS=$(CXXFLAGS0) $(DROOT)
