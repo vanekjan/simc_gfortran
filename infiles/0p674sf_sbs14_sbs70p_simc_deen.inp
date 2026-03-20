@@ -5,7 +5,7 @@
 
 
 begin parm experiment
-  ngen = 50000			;  POS: # of successes; NEG: # of tries
+  ngen = 100			;  POS: # of successes; NEG: # of tries
   EXPER%charge =  1.0		;  total charge (mC)
   doing_deuterium_n = 1         ;  (ONE = TRUE) D(ee'n) process
   doing_phsp = 0		;  (ONE = TRUE)	- If all of the doing_* are
