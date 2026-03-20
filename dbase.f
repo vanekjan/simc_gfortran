@@ -245,7 +245,7 @@ C DJG:
 	  stop 'I dont know what phi should be for the electron arm'
 	endif
 
-	if (hadron_arm.eq.1 .or. hadron_arm.eq.3.or. hadron_arm.eq.7) then
+	if (hadron_arm.eq.1 .or. hadron_arm.eq.3.or. hadron_arm.eq.7 .or. hadron_arm.eq.9) then
 	  spec%p%phi = 3*pi/2.
 	else if (hadron_arm.eq.2 .or. hadron_arm.eq.4 .or.
      >		 hadron_arm.eq.5 .or. hadron_arm.eq.6.or. hadron_arm.eq.8) then
