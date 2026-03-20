@@ -3,7 +3,7 @@
 begin parm experiment
   ngen = 10000			;  POS: # of successes; NEG: # of tries
   EXPER%charge = 1.0		;  total charge (mC)
-  doing_deuterium = 1         ;  (ONE = TRUE) D(e,e''p) process
+  ;doing_deuterium = 1         ;  (ONE = TRUE) D(e,e''p) process
   doing_phsp = 0		;  (ONE = TRUE)
   doing_kaon = 0		;  (ONE = TRUE)
   doing_pion = 1		;  (ONE = TRUE)
