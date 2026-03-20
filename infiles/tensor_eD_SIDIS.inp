@@ -5,21 +5,18 @@ begin parm experiment
   EXPER%charge = 1.0		;  total charge (mC)
   doing_phsp = 0		;  (ONE = TRUE)
   doing_kaon = 0		;  (ONE = TRUE)
-  doing_pion = 0		;  (ONE = TRUE)
+  doing_pion = 1		;  (ONE = TRUE)
   which_pion = 0		;  (0=p->pi+,1=n->pi-,10/11 for pi+/pi- coherent)
-  doing_decay = 0		;  1=decay ON, 0=decay OFF.
-  ctau = 780.4			;  decay length (cm)
+  doing_decay = 1		;  1=decay ON, 0=decay OFF.
+  ctau = 780.45			;  decay length (cm)
   doing_semi = 1    ;  turn on SIDIS
-  doing_deutsemi = 1 ;  use deuteron as target in SIDIS model
-  doing_semipi = 1  ;  select pion as SIDIS hadron
-  doing_hplus = 1   ;  select SIDIS hadron charge 1 = +, 0 = -
 end parm experiment
 
 begin parm kinematics_main
   Ebeam = 11000.0			;  (MeV)
   dEbeam = 0.05			;  beam energy variation (%)
   electron_arm = 5              ;  1=hms,2=sos,3=hrsr,4=hrsl,5=shms
-  hadron_arm = 8                ;  1=hms,2=sos,3=hrsr,4=hrsl,5=shms,7=calo:BR,8=calo:BL
+  hadron_arm = 9                ;  1=hms,2=sos,3=hrsr,4=hrsl,5=shms,7=calo:BR,8=calo:BL,9=SBS(untested)
   spec%e%P = 4700.0		;  e arm central momentum (MeV/c)
   spec%e%theta = 11.35		;  e arm angle setting (degrees)
   spec%p%P = 3000.00		;  p arm central momentum (MeV/c)
@@ -51,17 +48,17 @@ begin parm e_arm_accept
   SPedge%e%delta%max =  15.0	;  delta max
   SPedge%e%yptar%min = -40.0	; .yptar.min = {TF} / 1000 (mrad)
   SPedge%e%yptar%max =  40.0	; .yptar.max = {TF} / 1000
-  SPedge%e%xptar%min = -90.0	; .xptar.min = {TF} / 1000 (mrad)
-  SPedge%e%xptar%max =  90.0	; .xptar.max = {TF} / 1000
+  SPedge%e%xptar%min = -20.0	; .xptar.min = {TF} / 1000 (mrad)
+  SPedge%e%xptar%max =  20.0	; .xptar.max = {TF} / 1000
 end parm e_arm_accept
 
 begin parm p_arm_accept
-  SPedge%p%delta%min = -90.0	;  delta min (SPECTROMETER ACCEPTANCE!)
-  SPedge%p%delta%max =  90.0	;  delta max
-  SPedge%p%yptar%min = -500.0	; .yptar.min = {TF} / 1000 (mrad)
-  SPedge%p%yptar%max =  500.0	; .yptar.max = {TF} / 1000
-  SPedge%p%xptar%min = -500.0	; .xptar.min = {TF} / 1000 (mrad)
-  SPedge%p%xptar%max =  500.0	; .xptar.max = {TF} / 1000
+  SPedge%p%delta%min = -33.3	;  delta min (SPECTROMETER ACCEPTANCE!)
+  SPedge%p%delta%max =  33.3	;  delta max
+  SPedge%p%yptar%min = -227.0	; .yptar.min = {TF} / 1000 (mrad)
+  SPedge%p%yptar%max =  227.0	; .yptar.max = {TF} / 1000
+  SPedge%p%xptar%min = -87.0	; .xptar.min = {TF} / 1000 (mrad)
+  SPedge%p%xptar%max =  87.0	; .xptar.max = {TF} / 1000
 end parm p_arm_accept
 
 begin parm beamandtargetinfo

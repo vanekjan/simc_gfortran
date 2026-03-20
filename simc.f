@@ -532,7 +532,7 @@ c	  write(7,*) 'BP thingie in/out     ',shmsSTOP_BP_in,shmsSTOP_BP_out
 	  write(7,*) 'Calo Trials:          ',caloSTOP_trials
 	  write(7,*) 'Extent hor/vert       ',caloSTOP_slit_hor,caloSTOP_slit_vert
 	  write(7,*) 'Successes             ',caloSTOP_successes
-	  endif
+	endif
 
 	close(7)
 
@@ -1518,6 +1518,8 @@ C DJG moved this to the last part of generate!!!
      >		m2, mc_smear, mc_smear, doing_decay,
      >		ntup%resfac, frx, fry, ok_p_arm, pathlen, using_tgt_field,
      >          zhadron,hadron_arm,drift_to_cal2)
+	  else if (hadron_arm.eq.9) then
+	    ok_p_arm = .true.
 	  endif
 
 
