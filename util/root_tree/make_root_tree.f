@@ -15,7 +15,7 @@ C     Program to convert simc .bin file to root tree
       real*8 ntup(80)
       real*4 ntup_out(80)
 
-      parameter(nev=10000000)
+      parameter(nev=10000)
       io=99
 
 c input filename
