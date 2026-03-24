@@ -233,6 +233,7 @@ c	endif
 	     NtupleTag(m) = 'Mrho' ! 57 or 65
 	     m = m+1
 	     NtupleTag(m) = 'Thrho' ! 58 or 66
+	  endif
     if(save_e_h_kine) then
       m = m+1
 	    NtupleTag(m) = 'p_e'	! 57
