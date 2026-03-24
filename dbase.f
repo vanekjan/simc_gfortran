@@ -916,6 +916,7 @@ c	      stop
 	ierr = regparmint('doing_hplus', doing_hplus_int,1)
 	ierr = regparmint('doing_rho',doing_rho_int,0)
 	ierr = regparmint('doing_decay',doing_decay_int,0)
+	ierr = regparmint('save_e_h_kine',save_e_h_kine_int,0)
 	ierr = regparmdouble('ctau',ctau,0.0)
 
 *	DEBUG
@@ -1062,6 +1063,7 @@ ccc
         if(doing_rho_int.gt.0) doing_rho=.true.
         if(doing_decay_int.gt.0) doing_decay=.true.
         if(do_fermi_int.gt.0) do_fermi=.true.
+        if(save_e_h_kine_int.gt.0) save_e_h_kine=.true.
 	do i=1,6
 	   if(debug_int(i).gt.0) debug(i)=.true.
 	enddo

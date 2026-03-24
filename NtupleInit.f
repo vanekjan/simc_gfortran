@@ -233,6 +233,31 @@ c	endif
 	     NtupleTag(m) = 'Mrho' ! 57 or 65
 	     m = m+1
 	     NtupleTag(m) = 'Thrho' ! 58 or 66
+    if(save_e_h_kine) then
+      m = m+1
+	    NtupleTag(m) = 'p_e'	! 57
+	    m = m+1
+	    NtupleTag(m) = 'ux_e'	! 58
+	    m = m+1
+	    NtupleTag(m) = 'uy_e'	! 59
+	    m = m+1
+	    NtupleTag(m) = 'uz_e'	! 60
+	    m = m+1
+	    NtupleTag(m) = 'p_p'	! 61
+	    m = m+1
+	    NtupleTag(m) = 'ux_p'	! 62
+	    m = m+1
+	    NtupleTag(m) = 'uy_p'	! 63
+	    m = m+1
+	    NtupleTag(m) = 'uz_p'	! 64
+	    m = m+1
+	    NtupleTag(m) = 'th_e'	! 65
+	    m = m+1
+	    NtupleTag(m) = 'ph_e'	! 66
+	    m = m+1
+	    NtupleTag(m) = 'th_p'	! 67
+	    m = m+1
+	    NtupleTag(m) = 'ph_p'	! 68
 	  endif
 	    
 	else if (doing_hyd_elast .or. doing_deuterium .or. doing_deuterium_n .or. doing_heavy) then

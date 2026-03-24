@@ -199,23 +199,35 @@ c	  ntu(11) = vertex%p%xptar			!mr
 	  ntu(55) = ntup%xfermi
 	  ntu(56) = main%phi_pq
 	  if(using_tgt_field) then
-	     ntu(57) = recon%theta_tarq
-	     ntu(58) = recon%phi_targ
-	     ntu(59) = recon%beta
-	     ntu(60) = recon%phi_s
-	     ntu(61) = recon%phi_c
-	     ntu(62) = main%beta
-	     ntu(63) = vertex%phi_s
-	     ntu(64) = vertex%phi_c	     
-	     if(doing_rho) then
-		ntu(65) = ntup%rhomass
-		ntu(66) = ntup%rhotheta
-	     endif
-	  else
-	     if(doing_rho) then
-		ntu(57) = ntup%rhomass
-		ntu(58) = ntup%rhotheta
-	     endif
+      ntu(57) = recon%theta_tarq
+      ntu(58) = recon%phi_targ
+      ntu(59) = recon%beta
+      ntu(60) = recon%phi_s
+      ntu(61) = recon%phi_c
+      ntu(62) = main%beta
+      ntu(63) = vertex%phi_s
+      ntu(64) = vertex%phi_c	     
+	    if(doing_rho) then
+	      ntu(65) = ntup%rhomass
+	      ntu(66) = ntup%rhotheta
+	  endif
+	  else if(doing_rho) then
+		  ntu(57) = ntup%rhomass
+		  ntu(58) = ntup%rhotheta
+	    endif
+	  else if(save_e_h_kine) then
+	    ntu(57) = recon%e%p
+	    ntu(58) = recon%ue%x
+	    ntu(59) = recon%ue%y
+	    ntu(60) = recon%ue%z
+	    ntu(61) = recon%p%p
+	    ntu(62) = recon%up%x
+	    ntu(63) = recon%up%y
+	    ntu(64) = recon%up%z
+	    ntu(65) = recon%e%theta
+	    ntu(66) = recon%e%phi
+	    ntu(67) = recon%p%theta
+	    ntu(68) = recon%p%phi
 	  endif
 	else if (doing_hyd_elast .or. doing_deuterium .or. doing_deuterium_n .or. doing_heavy) then
 	  ntu(34) = corrsing/1000.
