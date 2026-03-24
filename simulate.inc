@@ -70,6 +70,7 @@
 	logical doing_hyd_elast, doing_deuterium, doing_deuterium_n, doing_heavy
 	logical doing_eep, doing_pion, doing_delta, doing_kaon, doing_rho
 	logical doing_semi, doing_semipi, doing_semika, doing_hplus
+	logical save_e_h_kine
 	integer*4 which_kaon, which_pion
 	logical using_cit_generation, using_Coulomb, using_Eloss
 	logical correct_Eloss, correct_raster,do_fermi
