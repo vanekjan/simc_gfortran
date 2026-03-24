@@ -87,6 +87,7 @@
 c variables that need to be translated from integer to logical
   	integer*4 mc_smear_int, use_benhar_sf_int,doing_kaon_int, doing_pion_int,doing_delta_int,doing_phsp_int
 	integer*4 doing_semi_int,doing_hplus_int,doing_rho_int,doing_decay_int,do_fermi_int
+	integer*4 save_e_h_kine_int
 	integer*4 debug_int(6), doing_deuterium_n_int
 	integer*4 hard_cuts_int,using_rad_int,use_offshell_rad_int
 	integer*4 using_Eloss_int,correct_eloss_int,correct_raster_int,using_cit_generation_int
