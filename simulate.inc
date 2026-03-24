@@ -106,6 +106,7 @@ c variables that need to be translated from integer to logical
      >    extra_dbase_file,tgt_field_file,using_E_arm_montecarlo,using_P_arm_montecarlo,
      >    doing_phsp, using_rad, hard_cuts, doing_hyd_elast, doing_deuterium, doing_deuterium_n,
      >    doing_eep, doing_pion, doing_delta, doing_kaon, doing_rho, doing_semi,
+     >    save_e_h_kine,
      >    doing_heavy, doing_semipi, doing_semika, doing_hplus, which_kaon,
      >    which_pion, using_cit_generation, using_Coulomb, using_Eloss,
      >    correct_Eloss, correct_raster, do_fermi,using_tgt_field,
@@ -114,6 +115,7 @@ c variables that need to be translated from integer to logical
      >    random_state_file, random_seed,
      >    mc_smear_int, use_benhar_sf_int,doing_kaon_int, doing_pion_int,doing_delta_int,doing_phsp_int,
      >    doing_semi_int,doing_hplus_int,doing_rho_int,doing_decay_int,do_fermi_int,doing_deuterium_n_int,
+     >    save_e_h_kine_int,
      >    debug_int,hard_cuts_int,using_rad_int,use_offshell_rad_int,
      >    using_Eloss_int,correct_eloss_int,correct_raster_int,using_cit_generation_int,
      >    using_Coulomb_int, using_tgt_field_int, using_HMScoll_int, using_SHMScoll_int
