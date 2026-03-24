@@ -91,7 +91,7 @@ begin parm spect_offset
 end parm spect_offset
 
 begin parm simulate
-  hard_cuts = 0         ;  (ONE = TRUE) SPedge and Em.max are hard cuts(ntuple)
+  hard_cuts = 1         ;  (ONE = TRUE) SPedge and Em.max are hard cuts(ntuple)
   using_rad = 1         ;  (ONE = TRUE)
   use_expon = 0         ;  (LEAVE AT 0)
   one_tail = 0          ;  0=all, 1=e, 2=e', 3=p, -3=all but p
