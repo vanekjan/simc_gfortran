@@ -210,17 +210,16 @@ c	  ntu(11) = vertex%p%xptar			!mr
 	    if(doing_rho) then
 	      ntu(65) = ntup%rhomass
 	      ntu(66) = ntup%rhotheta
-	  endif
+	     endif
 	  else if(doing_rho) then
 		  ntu(57) = ntup%rhomass
-		  ntu(58) = ntup%rhotheta
-	    endif
+		  ntu(58) = ntup%rhotheta	
 	  else if(save_e_h_kine) then
-	    ntu(57) = recon%e%p
+	    ntu(57) = recon%e%p/1000. !GeV
 	    ntu(58) = recon%ue%x
 	    ntu(59) = recon%ue%y
 	    ntu(60) = recon%ue%z
-	    ntu(61) = recon%p%p
+	    ntu(61) = recon%p%p/1000. !GeV
 	    ntu(62) = recon%up%x
 	    ntu(63) = recon%up%y
 	    ntu(64) = recon%up%z

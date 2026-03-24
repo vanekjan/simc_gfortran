@@ -11,6 +11,7 @@ begin parm experiment
   doing_decay = 1		;  1=decay ON, 0=decay OFF.
   ctau = 780.45			;  decay length (cm)
   doing_semi = 1    ;  turn on SIDIS
+  save_e_h_kine = 1 ; save e and hadron kinematics
 end parm experiment
 
 begin parm kinematics_main
