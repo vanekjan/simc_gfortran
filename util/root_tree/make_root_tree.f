@@ -52,8 +52,8 @@ c now loop over events
          call FillNTBranch('all')
       enddo ! loop over events
 
-      call PrintNT()
-      call RootNTOutp();
+c      call PrintNT()
+c      call RootNTOutp();
 
       end
 
