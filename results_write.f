@@ -227,6 +227,10 @@ c	  ntu(11) = vertex%p%xptar			!mr
 	    ntu(66) = recon%e%phi
 	    ntu(67) = recon%p%theta
 	    ntu(68) = recon%p%phi
+	    ntu(69) = vxi
+	    ntu(70) = vyi
+	    ntu(71) = vzi
+	    ntu(72) = vEin
 	  endif
 	else if (doing_hyd_elast .or. doing_deuterium .or. doing_deuterium_n .or. doing_heavy) then
 	  ntu(34) = corrsing/1000.

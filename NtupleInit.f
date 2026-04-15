@@ -259,6 +259,14 @@ c	endif
 	    NtupleTag(m) = 'th_p'	! 67
 	    m = m+1
 	    NtupleTag(m) = 'ph_p'	! 68
+	    m = m+1
+	    NtupleTag(m) = 'vxi'	! 69
+	    m = m+1
+	    NtupleTag(m) = 'vyi'	! 70
+	    m = m+1
+	    NtupleTag(m) = 'vzi'	! 71
+	    m = m+1
+	    NtupleTag(m) = 'ebeam'! 72
 	  endif
 	    
 	else if (doing_hyd_elast .or. doing_deuterium .or. doing_deuterium_n .or. doing_heavy) then
