@@ -177,7 +177,8 @@ void fillntbranch_(const char *chtag, int ltag)
 void rootntoutp_()
   //Close the ntuple file
 {
-  nt->Write("",TObject::kOverwrite);
+  //nt->Write("",TObject::kOverwrite);
+  nt->Write();
   outfile->Close();
   return;
 }//rootntoutp_ ->

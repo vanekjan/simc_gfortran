@@ -31,9 +31,7 @@ c output filename
       
       read(io) NtupleSize
       call InitRootNT(treefilename,'RECREATE');
-      
-      write(6,*) NtupleSize
-
+         
       write(6,*) 'Variables in output file:'
       do i=1,NtupleSize
          read(io) NtupleTag(i)
@@ -55,7 +53,7 @@ c now loop over events
       enddo ! loop over events
 
       call PrintNT()
-      call RootNTOutp();
+      call RootNTOutp()
 
       end
 
